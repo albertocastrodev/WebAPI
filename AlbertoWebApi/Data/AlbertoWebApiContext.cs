@@ -5,7 +5,7 @@ namespace AlbertoWebApi.Data
 {
     public class AlbertoWebApiContext : DbContext
     {
-        //Configurações de acesso ao banco
+        //Configurações de acesso ao banco ---
 
         public AlbertoWebApiContext(DbContextOptions<AlbertoWebApiContext> options) : base(options)
 
