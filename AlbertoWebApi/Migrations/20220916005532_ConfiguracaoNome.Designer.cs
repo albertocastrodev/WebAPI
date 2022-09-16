@@ -3,6 +3,7 @@ using AlbertoWebApi.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AlbertoWebApi.Migrations
 {
     [DbContext(typeof(AlbertoWebApiContext))]
-    partial class AlbertoWebApiContextModelSnapshot : ModelSnapshot
+    [Migration("20220916005532_ConfiguracaoNome")]
+    partial class ConfiguracaoNome
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

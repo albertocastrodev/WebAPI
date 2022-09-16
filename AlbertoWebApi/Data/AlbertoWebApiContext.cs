@@ -1,4 +1,5 @@
-﻿using AlbertoWebApi.Entites;
+﻿using AlbertoWebApi.Data.Configuration;
+using AlbertoWebApi.Entites;
 using Microsoft.EntityFrameworkCore;
 
 namespace AlbertoWebApi.Data
@@ -10,7 +11,7 @@ namespace AlbertoWebApi.Data
         public AlbertoWebApiContext(DbContextOptions<AlbertoWebApiContext> options) : base(options)
 
         {
-        
+
 
         }
 
@@ -18,11 +19,13 @@ namespace AlbertoWebApi.Data
 
         public DbSet<Pessoa> Pessoas { get; set; }
 
+        public DbSet<Departamento> Departamentos { get; set; }
 
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+            modelBuilder.ApplyConfiguration(new PessoaConfiguration());
+        }
     }
-
-
-
-
-
 }

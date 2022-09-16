@@ -1,7 +1,8 @@
 ﻿using AlbertoWebApi.Data;
+using AlbertoWebApi.DTO;
 using AlbertoWebApi.Entites;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace AlbertoWebApi.Controllers
 {
@@ -18,23 +19,33 @@ namespace AlbertoWebApi.Controllers
 
         }
 
-
-
         [HttpGet]
         public IActionResult GetAll()
         {
-
-
-            var pessoas = _context.Pessoas.ToList();
+            var pessoas = _context.Pessoas.Include(c=>c.Departamento).Select(pessoa => new PessoaDTO 
+            {
+                DepartamentoId = pessoa.DepartamentoId,
+                Nome = pessoa.Nome,
+                Idade = pessoa.Idade,
+                Id = pessoa.Id,
+                Departamento = new DepartamentoDTO 
+                {
+                    Nome = pessoa.Departamento.Nome,
+                    Id = pessoa.Departamento.Id
+                }
+            });
             return Ok(pessoas);
-
         }
-
+        
         [HttpPost]
-        public IActionResult Insert(Pessoa pessoa)
+        public IActionResult Insert(PessoaDTO pessoaDTO)
         {
-
-
+            var pessoa = new Pessoa
+            {
+                DepartamentoId = pessoaDTO.DepartamentoId,
+                Idade = pessoaDTO.Idade,
+                Nome = pessoaDTO.Nome
+            };
             _context.Pessoas.Add(pessoa);
             _context.SaveChanges();
             return Ok();
@@ -51,14 +62,14 @@ namespace AlbertoWebApi.Controllers
         }
 
         [HttpPut]
-        public IActionResult Update(Pessoa pessoa)
+        public IActionResult Update(PessoaDTO pessoaDTO)
         {
-
-            var pessoaASerAlterada = _context.Pessoas.Find(pessoa.Id);
-            pessoaASerAlterada.Nome = pessoa.Nome;
-            pessoaASerAlterada.Idade = pessoa.Idade;
-            pessoaASerAlterada.Departamento = pessoa.Departamento;
+            var pessoaASerAlterada = _context.Pessoas.Find(pessoaDTO.Id);
+            pessoaASerAlterada.DepartamentoId = pessoaDTO.DepartamentoId;
+            pessoaASerAlterada.Nome = pessoaDTO.Nome;
+            pessoaASerAlterada.Idade = pessoaDTO.Idade;
             _context.Update(pessoaASerAlterada);
+            _context.SaveChanges();
             return Ok();
         }
     }
