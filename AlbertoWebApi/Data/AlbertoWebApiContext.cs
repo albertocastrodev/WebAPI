@@ -21,6 +21,8 @@ namespace AlbertoWebApi.Data
 
         public DbSet<Departamento> Departamentos { get; set; }
 
+        public DbSet<Endereco> Endereco { get; set; }
+
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

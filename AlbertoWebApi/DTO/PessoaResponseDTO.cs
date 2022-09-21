@@ -1,6 +1,6 @@
-﻿namespace AlbertoWebApi.Entites
+﻿namespace AlbertoWebApi.DTO
 {
-    public class Pessoa
+    public class PessoaResponseDTO
     {
         public int Id { get; set; }
         public string Nome { get; set; }
@@ -9,10 +9,11 @@
 
         public int DepartamentoId { get; set; }
 
-        public virtual Departamento Departamento { get; set; }
+        public DepartamentoDTO Departamento { get; set; }
+
 
         public int EnderecoId { get; set; }
 
-        public virtual Endereco Endereco { get; set; }
+        public  EnderecoDTO Endereco { get; set; }
     }
 }

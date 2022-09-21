@@ -3,6 +3,7 @@ using AlbertoWebApi.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AlbertoWebApi.Migrations
 {
     [DbContext(typeof(AlbertoWebApiContext))]
-    partial class AlbertoWebApiContextModelSnapshot : ModelSnapshot
+    [Migration("20220916131807_CriandoEndereco")]
+    partial class CriandoEndereco
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -58,19 +60,22 @@ namespace AlbertoWebApi.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Logradouro")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("Numero")
+                        .HasColumnType("int");
 
-                    b.Property<string>("Numero")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("PessoaId")
+                        .HasColumnType("int");
 
                     b.Property<string>("UF")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("logradouro")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
+
+                    b.HasIndex("PessoaId");
 
                     b.ToTable("Endereco");
                 });
@@ -86,9 +91,6 @@ namespace AlbertoWebApi.Migrations
                     b.Property<int>("DepartamentoId")
                         .HasColumnType("int");
 
-                    b.Property<int>("EnderecoId")
-                        .HasColumnType("int");
-
                     b.Property<int>("Idade")
                         .HasColumnType("int");
 
@@ -101,9 +103,18 @@ namespace AlbertoWebApi.Migrations
 
                     b.HasIndex("DepartamentoId");
 
-                    b.HasIndex("EnderecoId");
-
                     b.ToTable("Pessoas");
+                });
+
+            modelBuilder.Entity("AlbertoWebApi.Entites.Endereco", b =>
+                {
+                    b.HasOne("AlbertoWebApi.Entites.Pessoa", "Pessoa")
+                        .WithMany()
+                        .HasForeignKey("PessoaId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Pessoa");
                 });
 
             modelBuilder.Entity("AlbertoWebApi.Entites.Pessoa", b =>
@@ -114,15 +125,7 @@ namespace AlbertoWebApi.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("AlbertoWebApi.Entites.Endereco", "Endereco")
-                        .WithMany()
-                        .HasForeignKey("EnderecoId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
                     b.Navigation("Departamento");
-
-                    b.Navigation("Endereco");
                 });
 #pragma warning restore 612, 618
         }
