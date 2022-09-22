@@ -14,5 +14,16 @@
         public int EnderecoId { get; set; }
 
         public virtual Endereco Endereco { get; set; }
+
+        public virtual Telefones Telefones { get; set; }
+
+        public int TelefonesId { get; set; }
+
+
+
+
+
+
+
     }
 }

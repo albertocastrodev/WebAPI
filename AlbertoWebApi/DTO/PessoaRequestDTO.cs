@@ -12,5 +12,7 @@
 
 
         public int EnderecoId { get; set; }
+
+        public int TelefoneId { get; set; } 
     }
 }

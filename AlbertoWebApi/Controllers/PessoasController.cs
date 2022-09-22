@@ -22,16 +22,18 @@ namespace AlbertoWebApi.Controllers
         [HttpGet]
         public IActionResult GetAll()
         {
-            var pessoasResponseDTO = _context.Pessoas.Include(c => c.Departamento).Include(c => c.Endereco).Select(pessoa => new PessoaResponseDTO
+            var pessoasResponseDTO = _context.Pessoas.Include(c => c.Departamento).Include(c => c.Endereco).Include(c=> c.Telefones).Select(pessoa => new PessoaResponseDTO
             {
                 Nome = pessoa.Nome,
                 Idade = pessoa.Idade,
                 Id = pessoa.Id,
+               
                 Departamento = new DepartamentoDTO
                 {
                     Nome = pessoa.Departamento.Nome,
                     Id = pessoa.Departamento.Id
                 },
+               
                 Endereco = new EnderecoDTO
                 {
                     Logradouro = pessoa.Endereco.Logradouro,
@@ -40,6 +42,16 @@ namespace AlbertoWebApi.Controllers
                     Cidade = pessoa.Endereco.Cidade,
                     Cep = pessoa.Endereco.Cep,
                     UF = pessoa.Endereco.UF
+                },
+
+                Telefones = new TelefonesDTO
+                {
+                
+                    Id = pessoa.Telefones.Id,  
+                    Tipo = pessoa.Telefones.Tipo, 
+                    DDD = pessoa.Telefones.DDD,
+                    NumeroTEL=pessoa.Telefones.NumeroTEL
+                
                 }
             });
             return Ok(pessoasResponseDTO);
@@ -50,10 +62,13 @@ namespace AlbertoWebApi.Controllers
         {
             var pessoa = new Pessoa
             {
+                
+                Idade = pessoaDTO.Idade,
+                Nome = pessoaDTO.Nome,
                 EnderecoId = pessoaDTO.EnderecoId,
                 DepartamentoId = pessoaDTO.DepartamentoId,
-                Idade = pessoaDTO.Idade,
-                Nome = pessoaDTO.Nome
+                TelefonesId = pessoaDTO.TelefoneId,
+
             };
 
 
@@ -76,10 +91,12 @@ namespace AlbertoWebApi.Controllers
         public IActionResult Update(PessoaResponseDTO pessoaDTO)
         {
             var pessoaASerAlterada = _context.Pessoas.Find(pessoaDTO.Id);
-            pessoaASerAlterada.EnderecoId = pessoaDTO.DepartamentoId;
-            pessoaASerAlterada.DepartamentoId = pessoaDTO.DepartamentoId;
+           
             pessoaASerAlterada.Nome = pessoaDTO.Nome;
             pessoaASerAlterada.Idade = pessoaDTO.Idade;
+            pessoaASerAlterada.EnderecoId = pessoaDTO.DepartamentoId;
+            pessoaASerAlterada.DepartamentoId = pessoaDTO.DepartamentoId;
+            pessoaASerAlterada.TelefonesId = pessoaDTO.DepartamentoId;
             _context.Update(pessoaASerAlterada);
             _context.SaveChanges();
             return Ok();

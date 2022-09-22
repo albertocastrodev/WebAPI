@@ -15,5 +15,9 @@
         public int EnderecoId { get; set; }
 
         public  EnderecoDTO Endereco { get; set; }
+
+        public int TelefonesId { get; set; } 
+
+        public TelefonesDTO Telefones { get; set; }
     }
 }

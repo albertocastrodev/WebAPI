@@ -97,13 +97,42 @@ namespace AlbertoWebApi.Migrations
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
 
+                    b.Property<int>("TelefonesId")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
 
                     b.HasIndex("DepartamentoId");
 
                     b.HasIndex("EnderecoId");
 
+                    b.HasIndex("TelefonesId");
+
                     b.ToTable("Pessoas");
+                });
+
+            modelBuilder.Entity("AlbertoWebApi.Entites.Telefones", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<int>("DDD")
+                        .HasColumnType("int");
+
+                    b.Property<string>("NumeroTEL")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Tipo")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Telefones");
                 });
 
             modelBuilder.Entity("AlbertoWebApi.Entites.Pessoa", b =>
@@ -120,9 +149,17 @@ namespace AlbertoWebApi.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.HasOne("AlbertoWebApi.Entites.Telefones", "Telefones")
+                        .WithMany()
+                        .HasForeignKey("TelefonesId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.Navigation("Departamento");
 
                     b.Navigation("Endereco");
+
+                    b.Navigation("Telefones");
                 });
 #pragma warning restore 612, 618
         }

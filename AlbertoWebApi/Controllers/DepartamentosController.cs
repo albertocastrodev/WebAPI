@@ -21,7 +21,9 @@ namespace AlbertoWebApi.Controllers
         [HttpPost]
         public IActionResult Insert(DepartamentoDTO departamentoDTO)
         {
-            var departamento = new Departamento { Nome = departamentoDTO.Nome };
+            var departamento = new Departamento
+            
+            { Nome = departamentoDTO.Nome };
             _context.Departamentos.Add(departamento);
             _context.SaveChanges();
             return Ok();
