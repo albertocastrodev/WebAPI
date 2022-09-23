@@ -705,6 +705,44 @@
             "rid": "win"
           }
         }
+      },
+      "AlbertoWebApi.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "AlbertoWebApi.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/AlbertoWebApi.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/AlbertoWebApi.Application.dll": {}
+        }
+      },
+      "AlbertoWebApi.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/AlbertoWebApi.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/AlbertoWebApi.Domain.dll": {}
+        }
+      },
+      "AlbertoWebApi.Infra/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "AlbertoWebApi.Domain": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "6.0.8",
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.8"
+        },
+        "compile": {
+          "bin/placeholder/AlbertoWebApi.Infra.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/AlbertoWebApi.Infra.dll": {}
+        }
       }
     }
   },
@@ -2051,10 +2089,28 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "AlbertoWebApi.Application/1.0.0": {
+      "type": "project",
+      "path": "../AlbertoWebApi.Application/AlbertoWebApi.Application.csproj",
+      "msbuildProject": "../AlbertoWebApi.Application/AlbertoWebApi.Application.csproj"
+    },
+    "AlbertoWebApi.Domain/1.0.0": {
+      "type": "project",
+      "path": "../AlbertoWebApi.Domain/AlbertoWebApi.Domain.csproj",
+      "msbuildProject": "../AlbertoWebApi.Domain/AlbertoWebApi.Domain.csproj"
+    },
+    "AlbertoWebApi.Infra/1.0.0": {
+      "type": "project",
+      "path": "../AlbertoWebApi.Infra/AlbertoWebApi.Infra.csproj",
+      "msbuildProject": "../AlbertoWebApi.Infra/AlbertoWebApi.Infra.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "AlbertoWebApi.Application >= 1.0.0",
+      "AlbertoWebApi.Domain >= 1.0.0",
+      "AlbertoWebApi.Infra >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 6.0.8",
       "Microsoft.EntityFrameworkCore.Design >= 6.0.8",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.8",
@@ -2088,7 +2144,17 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Curso\\WebApi\\AlbertoWebApi\\AlbertoWebApi.Application\\AlbertoWebApi.Application.csproj": {
+              "projectPath": "C:\\Curso\\WebApi\\AlbertoWebApi\\AlbertoWebApi.Application\\AlbertoWebApi.Application.csproj"
+            },
+            "C:\\Curso\\WebApi\\AlbertoWebApi\\AlbertoWebApi.Domain\\AlbertoWebApi.Domain.csproj": {
+              "projectPath": "C:\\Curso\\WebApi\\AlbertoWebApi\\AlbertoWebApi.Domain\\AlbertoWebApi.Domain.csproj"
+            },
+            "C:\\Curso\\WebApi\\AlbertoWebApi\\AlbertoWebApi.Infra\\AlbertoWebApi.Infra.csproj": {
+              "projectPath": "C:\\Curso\\WebApi\\AlbertoWebApi\\AlbertoWebApi.Infra\\AlbertoWebApi.Infra.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

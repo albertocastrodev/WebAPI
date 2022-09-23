@@ -3,7 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32602.215
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlbertoWebApi", "AlbertoWebApi\AlbertoWebApi.csproj", "{9F30D6C7-7F89-492B-B3B8-6E313A64C800}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AlbertoWebApi", "AlbertoWebApi\AlbertoWebApi.csproj", "{9F30D6C7-7F89-492B-B3B8-6E313A64C800}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0 - WebApi", "0 - WebApi", "{D1DB4556-599F-48F0-936B-42D7E0511BD6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Application", "1 - Application", "{5DCD1F3A-3989-4DB8-9377-237ED2081694}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Infra", "2 - Infra", "{77A0B44C-EFBB-44A4-A7DF-7D0AC5BC9A3E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Domain", "3 - Domain", "{541E62E5-A598-4A0B-BB68-5EAA568BD913}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlbertoWebApi.Domain", "AlbertoWebApi.Domain\AlbertoWebApi.Domain.csproj", "{13998482-033D-4113-AC58-71D4F0F305E0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlbertoWebApi.Infra", "AlbertoWebApi.Infra\AlbertoWebApi.Infra.csproj", "{F5E11E50-8925-4C98-9F91-06299F7275FF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlbertoWebApi.Application", "AlbertoWebApi.Application\AlbertoWebApi.Application.csproj", "{3ACF58AE-5F1E-4CED-B8EA-82D3B8D107A6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,9 +29,27 @@ Global
 		{9F30D6C7-7F89-492B-B3B8-6E313A64C800}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9F30D6C7-7F89-492B-B3B8-6E313A64C800}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9F30D6C7-7F89-492B-B3B8-6E313A64C800}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13998482-033D-4113-AC58-71D4F0F305E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13998482-033D-4113-AC58-71D4F0F305E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13998482-033D-4113-AC58-71D4F0F305E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13998482-033D-4113-AC58-71D4F0F305E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5E11E50-8925-4C98-9F91-06299F7275FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5E11E50-8925-4C98-9F91-06299F7275FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5E11E50-8925-4C98-9F91-06299F7275FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5E11E50-8925-4C98-9F91-06299F7275FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3ACF58AE-5F1E-4CED-B8EA-82D3B8D107A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3ACF58AE-5F1E-4CED-B8EA-82D3B8D107A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3ACF58AE-5F1E-4CED-B8EA-82D3B8D107A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3ACF58AE-5F1E-4CED-B8EA-82D3B8D107A6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9F30D6C7-7F89-492B-B3B8-6E313A64C800} = {D1DB4556-599F-48F0-936B-42D7E0511BD6}
+		{13998482-033D-4113-AC58-71D4F0F305E0} = {541E62E5-A598-4A0B-BB68-5EAA568BD913}
+		{F5E11E50-8925-4C98-9F91-06299F7275FF} = {77A0B44C-EFBB-44A4-A7DF-7D0AC5BC9A3E}
+		{3ACF58AE-5F1E-4CED-B8EA-82D3B8D107A6} = {5DCD1F3A-3989-4DB8-9377-237ED2081694}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5293E47C-5F01-45C0-BCFC-B933DA15835A}

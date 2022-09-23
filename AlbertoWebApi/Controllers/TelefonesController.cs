@@ -21,13 +21,13 @@ namespace AlbertoWebApi.Controllers
         }
 
         [HttpPost]
-        public IActionResult Insert(TelefonesDTO TelefonesDTO)
+        public IActionResult Insert(TelefoneDTO TelefonesDTO)
         {
-            var telefone = new Telefones
+            var telefone = new Telefone
             {
 
                 DDD = TelefonesDTO.DDD,
-                NumeroTEL = TelefonesDTO.NumeroTEL,
+                Numero = TelefonesDTO.Numero,
                 Tipo = TelefonesDTO.Tipo
 
 
@@ -44,11 +44,11 @@ namespace AlbertoWebApi.Controllers
         [HttpGet]
         public IActionResult GetAll()
         {
-            var telefones = _context.Telefones.Select(c => new TelefonesDTO
+            var telefones = _context.Telefones.Select(c => new TelefoneDTO
             {
                 Id = c.Id,
                 DDD = c.DDD,
-                NumeroTEL = c.NumeroTEL
+                Numero = c.Numero
                 
             });
 
@@ -61,11 +61,11 @@ namespace AlbertoWebApi.Controllers
         public IActionResult GetById(int id)
         {
             var telefone = _context.Telefones.Find(id);
-            var TelefonesDTO = new TelefonesDTO
+            var TelefonesDTO = new TelefoneDTO
             {
                 Id = telefone.Id,
                 DDD = telefone.DDD,
-                NumeroTEL = telefone.NumeroTEL,
+                Numero = telefone.Numero,
                 Tipo = telefone.Tipo,
             };
             return Ok(TelefonesDTO);

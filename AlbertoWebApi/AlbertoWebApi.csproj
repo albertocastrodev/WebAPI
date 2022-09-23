@@ -21,7 +21,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Migrations\" />
+    <ProjectReference Include="..\AlbertoWebApi.Application\AlbertoWebApi.Application.csproj" />
+    <ProjectReference Include="..\AlbertoWebApi.Domain\AlbertoWebApi.Domain.csproj" />
+    <ProjectReference Include="..\AlbertoWebApi.Infra\AlbertoWebApi.Infra.csproj" />
   </ItemGroup>
 
 </Project>

@@ -8,6 +8,9 @@
     ".NETCoreApp,Version=v6.0": {
       "AlbertoWebApi/1.0.0": {
         "dependencies": {
+          "AlbertoWebApi.Application": "1.0.0",
+          "AlbertoWebApi.Domain": "1.0.0",
+          "AlbertoWebApi.Infra": "1.0.0",
           "Microsoft.EntityFrameworkCore": "6.0.8",
           "Microsoft.EntityFrameworkCore.Design": "6.0.8",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.8",
@@ -481,6 +484,29 @@
             "fileVersion": "4.700.19.56404"
           }
         }
+      },
+      "AlbertoWebApi.Application/1.0.0": {
+        "dependencies": {
+          "AlbertoWebApi.Domain": "1.0.0"
+        },
+        "runtime": {
+          "AlbertoWebApi.Application.dll": {}
+        }
+      },
+      "AlbertoWebApi.Domain/1.0.0": {
+        "runtime": {
+          "AlbertoWebApi.Domain.dll": {}
+        }
+      },
+      "AlbertoWebApi.Infra/1.0.0": {
+        "dependencies": {
+          "AlbertoWebApi.Domain": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "6.0.8",
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.8"
+        },
+        "runtime": {
+          "AlbertoWebApi.Infra.dll": {}
+        }
       }
     }
   },
@@ -832,6 +858,21 @@
       "sha512": "sha512-CeWTdRNfRaSh0pm2gDTJFwVaXfTq6Xwv/sA887iwPTneW7oMtMlpvDIO+U60+3GWTB7Aom6oQwv5VZVUhQRdPQ==",
       "path": "system.windows.extensions/4.7.0",
       "hashPath": "system.windows.extensions.4.7.0.nupkg.sha512"
+    },
+    "AlbertoWebApi.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "AlbertoWebApi.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "AlbertoWebApi.Infra/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

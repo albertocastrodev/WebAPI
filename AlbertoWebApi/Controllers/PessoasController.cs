@@ -22,7 +22,7 @@ namespace AlbertoWebApi.Controllers
         [HttpGet]
         public IActionResult GetAll()
         {
-            var pessoasResponseDTO = _context.Pessoas.Include(c => c.Departamento).Include(c => c.Endereco).Include(c=> c.Telefones).Select(pessoa => new PessoaResponseDTO
+            var pessoasResponseDTO = _context.Pessoas.Include(c => c.Departamento).Include(c => c.Enderecos).Include(c=> c.Telefones).Select(pessoa => new PessoaResponseDTO
             {
                 Nome = pessoa.Nome,
                 Idade = pessoa.Idade,
@@ -36,22 +36,20 @@ namespace AlbertoWebApi.Controllers
                
                 Endereco = new EnderecoDTO
                 {
-                    Logradouro = pessoa.Endereco.Logradouro,
-                    Numero = pessoa.Endereco.Numero,
-                    Bairro = pessoa.Endereco.Bairro,
-                    Cidade = pessoa.Endereco.Cidade,
-                    Cep = pessoa.Endereco.Cep,
-                    UF = pessoa.Endereco.UF
+                    Logradouro = pessoa.Enderecos.FirstOrDefault().Logradouro,
+                    Numero = pessoa.Enderecos.FirstOrDefault().Numero,
+                    Bairro = pessoa.Enderecos.FirstOrDefault().Bairro,
+                    Cidade = pessoa.Enderecos.FirstOrDefault().Cidade,
+                    Cep = pessoa.Enderecos.FirstOrDefault().Cep,
+                    UF = pessoa.Enderecos.FirstOrDefault().UF
                 },
 
-                Telefones = new TelefonesDTO
+                Telefones = new TelefoneDTO
                 {
-                
-                    Id = pessoa.Telefones.Id,  
-                    Tipo = pessoa.Telefones.Tipo, 
-                    DDD = pessoa.Telefones.DDD,
-                    NumeroTEL=pessoa.Telefones.NumeroTEL
-                
+                    Id = pessoa.Telefones.FirstOrDefault().Id,  
+                    Tipo = pessoa.Telefones.FirstOrDefault().Tipo, 
+                    DDD = pessoa.Telefones.FirstOrDefault().DDD,
+                    Numero=pessoa.Telefones.FirstOrDefault().Numero
                 }
             });
             return Ok(pessoasResponseDTO);

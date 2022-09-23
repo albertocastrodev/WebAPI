@@ -1,0 +1,12 @@
+C:\Curso\WebApi\AlbertoWebApi\AlbertoWebApi.Domain\bin\Debug\net6.0\AlbertoWebApi.Domain.deps.json
+C:\Curso\WebApi\AlbertoWebApi\AlbertoWebApi.Domain\bin\Debug\net6.0\AlbertoWebApi.Domain.dll
+C:\Curso\WebApi\AlbertoWebApi\AlbertoWebApi.Domain\bin\Debug\net6.0\AlbertoWebApi.Domain.pdb
+C:\Curso\WebApi\AlbertoWebApi\AlbertoWebApi.Domain\obj\Debug\net6.0\AlbertoWebApi.Domain.csproj.AssemblyReference.cache
+C:\Curso\WebApi\AlbertoWebApi\AlbertoWebApi.Domain\obj\Debug\net6.0\AlbertoWebApi.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Curso\WebApi\AlbertoWebApi\AlbertoWebApi.Domain\obj\Debug\net6.0\AlbertoWebApi.Domain.AssemblyInfoInputs.cache
+C:\Curso\WebApi\AlbertoWebApi\AlbertoWebApi.Domain\obj\Debug\net6.0\AlbertoWebApi.Domain.AssemblyInfo.cs
+C:\Curso\WebApi\AlbertoWebApi\AlbertoWebApi.Domain\obj\Debug\net6.0\AlbertoWebApi.Domain.csproj.CoreCompileInputs.cache
+C:\Curso\WebApi\AlbertoWebApi\AlbertoWebApi.Domain\obj\Debug\net6.0\AlbertoWebApi.Domain.dll
+C:\Curso\WebApi\AlbertoWebApi\AlbertoWebApi.Domain\obj\Debug\net6.0\refint\AlbertoWebApi.Domain.dll
+C:\Curso\WebApi\AlbertoWebApi\AlbertoWebApi.Domain\obj\Debug\net6.0\AlbertoWebApi.Domain.pdb
+C:\Curso\WebApi\AlbertoWebApi\AlbertoWebApi.Domain\obj\Debug\net6.0\ref\AlbertoWebApi.Domain.dll

@@ -1,0 +1,17 @@
+C:\Curso\WebApi\AlbertoWebApi\AlbertoWebApi.Infra\bin\Debug\net6.0\AlbertoWebApi.Infra.deps.json
+C:\Curso\WebApi\AlbertoWebApi\AlbertoWebApi.Infra\bin\Debug\net6.0\AlbertoWebApi.Infra.runtimeconfig.json
+C:\Curso\WebApi\AlbertoWebApi\AlbertoWebApi.Infra\bin\Debug\net6.0\AlbertoWebApi.Infra.dll
+C:\Curso\WebApi\AlbertoWebApi\AlbertoWebApi.Infra\bin\Debug\net6.0\AlbertoWebApi.Infra.pdb
+C:\Curso\WebApi\AlbertoWebApi\AlbertoWebApi.Infra\bin\Debug\net6.0\AlbertoWebApi.Domain.dll
+C:\Curso\WebApi\AlbertoWebApi\AlbertoWebApi.Infra\bin\Debug\net6.0\AlbertoWebApi.Domain.pdb
+C:\Curso\WebApi\AlbertoWebApi\AlbertoWebApi.Infra\obj\Debug\net6.0\AlbertoWebApi.Infra.csproj.AssemblyReference.cache
+C:\Curso\WebApi\AlbertoWebApi\AlbertoWebApi.Infra\obj\Debug\net6.0\AlbertoWebApi.Infra.GeneratedMSBuildEditorConfig.editorconfig
+C:\Curso\WebApi\AlbertoWebApi\AlbertoWebApi.Infra\obj\Debug\net6.0\AlbertoWebApi.Infra.AssemblyInfoInputs.cache
+C:\Curso\WebApi\AlbertoWebApi\AlbertoWebApi.Infra\obj\Debug\net6.0\AlbertoWebApi.Infra.AssemblyInfo.cs
+C:\Curso\WebApi\AlbertoWebApi\AlbertoWebApi.Infra\obj\Debug\net6.0\AlbertoWebApi.Infra.csproj.CoreCompileInputs.cache
+C:\Curso\WebApi\AlbertoWebApi\AlbertoWebApi.Infra\obj\Debug\net6.0\AlbertoWebApi.Infra.csproj.CopyComplete
+C:\Curso\WebApi\AlbertoWebApi\AlbertoWebApi.Infra\obj\Debug\net6.0\AlbertoWebApi.Infra.dll
+C:\Curso\WebApi\AlbertoWebApi\AlbertoWebApi.Infra\obj\Debug\net6.0\refint\AlbertoWebApi.Infra.dll
+C:\Curso\WebApi\AlbertoWebApi\AlbertoWebApi.Infra\obj\Debug\net6.0\AlbertoWebApi.Infra.pdb
+C:\Curso\WebApi\AlbertoWebApi\AlbertoWebApi.Infra\obj\Debug\net6.0\AlbertoWebApi.Infra.genruntimeconfig.cache
+C:\Curso\WebApi\AlbertoWebApi\AlbertoWebApi.Infra\obj\Debug\net6.0\ref\AlbertoWebApi.Infra.dll

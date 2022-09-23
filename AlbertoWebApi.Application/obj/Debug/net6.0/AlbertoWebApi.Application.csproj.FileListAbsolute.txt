@@ -1,0 +1,15 @@
+C:\Curso\WebApi\AlbertoWebApi\AlbertoWebApi.Application\bin\Debug\net6.0\AlbertoWebApi.Application.deps.json
+C:\Curso\WebApi\AlbertoWebApi\AlbertoWebApi.Application\bin\Debug\net6.0\AlbertoWebApi.Application.dll
+C:\Curso\WebApi\AlbertoWebApi\AlbertoWebApi.Application\bin\Debug\net6.0\AlbertoWebApi.Application.pdb
+C:\Curso\WebApi\AlbertoWebApi\AlbertoWebApi.Application\bin\Debug\net6.0\AlbertoWebApi.Domain.dll
+C:\Curso\WebApi\AlbertoWebApi\AlbertoWebApi.Application\bin\Debug\net6.0\AlbertoWebApi.Domain.pdb
+C:\Curso\WebApi\AlbertoWebApi\AlbertoWebApi.Application\obj\Debug\net6.0\AlbertoWebApi.Application.csproj.AssemblyReference.cache
+C:\Curso\WebApi\AlbertoWebApi\AlbertoWebApi.Application\obj\Debug\net6.0\AlbertoWebApi.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Curso\WebApi\AlbertoWebApi\AlbertoWebApi.Application\obj\Debug\net6.0\AlbertoWebApi.Application.AssemblyInfoInputs.cache
+C:\Curso\WebApi\AlbertoWebApi\AlbertoWebApi.Application\obj\Debug\net6.0\AlbertoWebApi.Application.AssemblyInfo.cs
+C:\Curso\WebApi\AlbertoWebApi\AlbertoWebApi.Application\obj\Debug\net6.0\AlbertoWebApi.Application.csproj.CoreCompileInputs.cache
+C:\Curso\WebApi\AlbertoWebApi\AlbertoWebApi.Application\obj\Debug\net6.0\AlbertoWebApi.Application.csproj.CopyComplete
+C:\Curso\WebApi\AlbertoWebApi\AlbertoWebApi.Application\obj\Debug\net6.0\AlbertoWebApi.Application.dll
+C:\Curso\WebApi\AlbertoWebApi\AlbertoWebApi.Application\obj\Debug\net6.0\refint\AlbertoWebApi.Application.dll
+C:\Curso\WebApi\AlbertoWebApi\AlbertoWebApi.Application\obj\Debug\net6.0\AlbertoWebApi.Application.pdb
+C:\Curso\WebApi\AlbertoWebApi\AlbertoWebApi.Application\obj\Debug\net6.0\ref\AlbertoWebApi.Application.dll
