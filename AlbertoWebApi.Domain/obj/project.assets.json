@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Curso\\WebApi\\AlbertoWebApi\\AlbertoWebApi.Domain\\AlbertoWebApi.Domain.csproj",
+      "projectUniqueName": "C:\\C#\\WebApi\\AlbertoWebApi\\AlbertoWebApi.Domain\\AlbertoWebApi.Domain.csproj",
       "projectName": "AlbertoWebApi.Domain",
-      "projectPath": "C:\\Curso\\WebApi\\AlbertoWebApi\\AlbertoWebApi.Domain\\AlbertoWebApi.Domain.csproj",
+      "projectPath": "C:\\C#\\WebApi\\AlbertoWebApi\\AlbertoWebApi.Domain\\AlbertoWebApi.Domain.csproj",
       "packagesPath": "C:\\Users\\alberto.castro\\.nuget\\packages\\",
-      "outputPath": "C:\\Curso\\WebApi\\AlbertoWebApi\\AlbertoWebApi.Domain\\obj\\",
+      "outputPath": "C:\\C#\\WebApi\\AlbertoWebApi\\AlbertoWebApi.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\alberto.castro\\AppData\\Roaming\\NuGet\\NuGet.Config",

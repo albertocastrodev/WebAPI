@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\AlbertoWebApi.Domain\AlbertoWebApi.Domain.csproj" />
+    <ProjectReference Include="..\AlbertoWebApi.Infra\AlbertoWebApi.Infra.csproj" />
   </ItemGroup>
 
 </Project>

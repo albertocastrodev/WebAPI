@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "1KgaBnUqC0BvNvy1b8wlTx4wqMufroLXzcksBUA3k2aMa/c2R/B9MhveGSPsBfLNsmIBZZnP/U3yk0nMCSzq8Q==",
+  "dgSpecHash": "t50BJDeo9rB+VSdKKz52zU4JDFrCby4i8ItDW/jeWixlA14Q3WDUO2nD9PgZVR8gjSn51i97d2ProcI/gXCYmg==",
   "success": true,
-  "projectFilePath": "C:\\Curso\\WebApi\\AlbertoWebApi\\AlbertoWebApi.Domain\\AlbertoWebApi.Domain.csproj",
+  "projectFilePath": "C:\\C#\\WebApi\\AlbertoWebApi\\AlbertoWebApi.Domain\\AlbertoWebApi.Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

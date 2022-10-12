@@ -487,7 +487,8 @@
       },
       "AlbertoWebApi.Application/1.0.0": {
         "dependencies": {
-          "AlbertoWebApi.Domain": "1.0.0"
+          "AlbertoWebApi.Domain": "1.0.0",
+          "AlbertoWebApi.Infra": "1.0.0"
         },
         "runtime": {
           "AlbertoWebApi.Application.dll": {}

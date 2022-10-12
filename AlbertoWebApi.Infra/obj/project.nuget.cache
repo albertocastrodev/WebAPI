@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "GVetmA1/ssVfXTM1VlpKe7bALNVsGzGgxi/2jezGPsbwPUcwAQQPqemWarUKcdCzLi2+1FjNgg5dFIFG4wRhwg==",
+  "dgSpecHash": "qoFKQ868zep3w6qYUhDNXtNetVbaYjs6kBpN0tvIzt8U02+cx1TdIGQEoCoJ5rIF8aQZIISp2KKQOj6pI0F3og==",
   "success": true,
-  "projectFilePath": "C:\\Curso\\WebApi\\AlbertoWebApi\\AlbertoWebApi.Infra\\AlbertoWebApi.Infra.csproj",
+  "projectFilePath": "C:\\C#\\WebApi\\AlbertoWebApi\\AlbertoWebApi.Infra\\AlbertoWebApi.Infra.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\alberto.castro\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\alberto.castro\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

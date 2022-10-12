@@ -1,4 +1,8 @@
+using AlbertoWebApi.Application.Applications;
+using AlbertoWebApi.Application.Interfaces;
 using AlbertoWebApi.Data;
+using AlbertoWebApi.Infra.Interfaces;
+using AlbertoWebApi.Infra.Repositories;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -9,6 +13,9 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+builder.Services.AddScoped<IPessoaApplication, PessoaAplication>();
+builder.Services.AddScoped<IPessoaRepository, PessoaRepository>();
 
 //Adicionando o contexto na aplicação -- 00
 
